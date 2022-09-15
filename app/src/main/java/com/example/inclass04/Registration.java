@@ -34,6 +34,8 @@ public class Registration extends Fragment {
         editTextId = view.findViewById(R.id.editTextId);
         textViewDepartment = view.findViewById(R.id.textViewDepartment);
 
+        ((MainActivity) getActivity()).getSupportActionBar().setTitle("Registration");
+
         view.findViewById(R.id.buttonSelect_registration).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

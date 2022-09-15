@@ -31,6 +31,8 @@ public class Department extends Fragment {
 
         View view =  inflater.inflate(R.layout.fragment_department, container, false);
 
+        ((MainActivity) getActivity()).getSupportActionBar().setTitle("Department");
+
         view.findViewById(R.id.buttonSubmit).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View viewD) {

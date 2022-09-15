@@ -54,6 +54,8 @@ public class Profile extends Fragment {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_profile, container, false);
 
+        ((MainActivity) getActivity()).getSupportActionBar().setTitle("Profile");
+
         textViewName =  view.findViewById(R.id.textViewName);
         textViewEmail =  view.findViewById(R.id.textViewEmail);
         textViewId =  view.findViewById(R.id.textViewId);

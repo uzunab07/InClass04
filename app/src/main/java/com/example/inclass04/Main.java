@@ -26,6 +26,8 @@ public class Main extends Fragment {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_main, container, false);
 
+        ((MainActivity) getActivity()).getSupportActionBar().setTitle("Main");
+
         view.findViewById(R.id.buttonSelect).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -33,6 +35,7 @@ public class Main extends Fragment {
                 getActivity().getSupportFragmentManager()
                         .beginTransaction()
                         .replace(R.id.containerView,new Registration(),"fragment")
+                        .addToBackStack(null)
                         .commit();
             }
         });

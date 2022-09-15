@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements Department.DepCho
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        getSupportActionBar().setTitle("djd");
         getSupportFragmentManager()
                 .beginTransaction()
                 .add(R.id.containerView,new Main())
