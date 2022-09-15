@@ -16,7 +16,7 @@ import android.widget.Toast;
 
 public class Registration extends Fragment {
     EditText editTextName,editTextEmail,editTextId;
-    String name,email,id,department,te="ttt";
+    String name,email,id,department;
     TextView textViewDepartment;
 
     public Registration() {
